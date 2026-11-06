@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+minifb = { version = "0.28", default-features = false, features = ["x11"] }
+
+[profile.release]
+opt-level = 3
